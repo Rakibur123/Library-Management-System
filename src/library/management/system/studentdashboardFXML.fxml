@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="466.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.management.system.StudentdashboardFXMLController">
+   <children>
+      <TableView layoutX="330.0" layoutY="80.0" prefHeight="270.0" prefWidth="376.0">
+         <columns>
+            <TableColumn fx:id="colid" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="coltittle" prefWidth="75.0" text="Title" />
+            <TableColumn fx:id="colaurther" prefWidth="75.0" text="Aurther" />
+            <TableColumn fx:id="colyear" prefWidth="75.0" text="Year" />
+            <TableColumn fx:id="colpage" prefWidth="75.0" text="Page" />
+         </columns>
+      </TableView>
+      <VBox layoutX="112.0" layoutY="110.0" prefHeight="189.0" prefWidth="199.0" spacing="15.0">
+         <children>
+            <TextField fx:id="tfid" promptText="Enter ID" />
+            <TextField fx:id="tftitle" layoutX="10.0" layoutY="10.0" promptText="Enter  Title" />
+            <TextField fx:id="tfaurther" layoutX="10.0" layoutY="35.0" promptText="Enter Aurther" />
+            <TextField fx:id="tfyear" layoutX="10.0" layoutY="60.0" promptText="Enter Year" />
+            <TextField fx:id="tfpage" layoutX="10.0" layoutY="85.0" promptText="Enter Page" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="8.0" layoutY="117.0" prefHeight="176.0" prefWidth="97.0" spacing="20.0">
+         <children>
+            <Label alignment="CENTER" text="ID" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" text="Titel">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="27.0" text="Aurther">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="44.0" text="Year">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="61.0" text="Page">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
