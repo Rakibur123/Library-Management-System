@@ -28,10 +28,7 @@ public class StudentDashboardController implements Initializable {
     @FXML
     private Button btnAvailableBook;
     @FXML
-    private Button Borrow;
-    @FXML
     private AnchorPane Homeform;
-    @FXML
     private AnchorPane Borrowform;
     @FXML
     private AnchorPane AvailableBookform;
@@ -124,22 +121,17 @@ public class StudentDashboardController implements Initializable {
     private void handleHomeButtonClick(ActionEvent event) {
         Homeform.setVisible(true);
         AvailableBookform.setVisible(false);
-        Borrowform.setVisible(false);
+       
     }
 
     @FXML
     private void handleAvailableBookButtonClick(ActionEvent event) {
         Homeform.setVisible(false);
         AvailableBookform.setVisible(true);
-        Borrowform.setVisible(false);
+       
     }
 
-    @FXML
-    private void handleBorrowButtonClick(ActionEvent event) {
-        Homeform.setVisible(false);
-        AvailableBookform.setVisible(false);
-        Borrowform.setVisible(true);
-    }
+
 
     @FXML
     private void addbtn(ActionEvent event) {
