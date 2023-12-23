@@ -19,6 +19,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
 
 public class FXMLloginController {
 
@@ -36,6 +37,8 @@ public class FXMLloginController {
     private ResultSet result;
     @FXML
     private Button login;
+    @FXML
+    private AnchorPane Anchorebackground1;
 
     @FXML
     private void btnlognin(ActionEvent event) {
