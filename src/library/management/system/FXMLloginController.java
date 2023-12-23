@@ -17,6 +17,7 @@ import java.sql.SQLException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class FXMLloginController {
@@ -33,6 +34,8 @@ public class FXMLloginController {
     private Connection connect;
     private PreparedStatement prepare;
     private ResultSet result;
+    @FXML
+    private Button login;
 
     @FXML
     private void btnlognin(ActionEvent event) {
