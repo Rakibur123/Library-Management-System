@@ -19,21 +19,33 @@
                <top>
                   <BorderPane prefHeight="73.0" prefWidth="549.0" BorderPane.alignment="CENTER">
                      <center>
-                        <AnchorPane prefHeight="73.0" prefWidth="385.0" style="-fx-background-color: #142b;" BorderPane.alignment="CENTER" />
+                        <AnchorPane prefHeight="73.0" prefWidth="385.0" style="-fx-background-color: #142b;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button layoutX="14.0" layoutY="20.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="221.0" style="-fx-background-color: trans;" text=" Library Management System" textFill="#fdfdfd">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children></AnchorPane>
                      </center>
                   </BorderPane>
                </top>
                <left>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #14282b;" BorderPane.alignment="CENTER">
                      <children>
-                        <Button fx:id="btnHome" layoutX="48.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleHomeButtonClick" prefHeight="49.0" prefWidth="93.0" text="Home">
+                        <Button fx:id="btnHome" layoutX="2.0" mnemonicParsing="false" onAction="#handleHomeButtonClick" prefHeight="91.0" prefWidth="203.0" style="-fx-background-color: trans; -fx-border-color: white;" text="Home" textFill="#f4f0f0">
                            <font>
-                              <Font name="System Bold" size="12.0" />
+                              <Font name="System Bold" size="27.0" />
                            </font>
                         </Button>
-                        <Button fx:id="btnAvailableBook" layoutX="27.0" layoutY="94.0" mnemonicParsing="false" onAction="#handleAvailableBookButtonClick" prefHeight="49.0" prefWidth="147.0" text="Available Book">
+                        <Button fx:id="btnAvailableBook" layoutX="1.0" layoutY="91.0" mnemonicParsing="false" onAction="#handleAvailableBookButtonClick" prefHeight="91.0" prefWidth="205.0" style="-fx-background-color: trans; -fx-border-color: white;" text="Available Book" textFill="#fbf8f8">
                            <font>
-                              <Font name="System Bold" size="12.0" />
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Logout" layoutX="15.0" layoutY="459.0" mnemonicParsing="false" onAction="#Logoutbtn" prefHeight="56.0" prefWidth="125.0" style="-fx-background-color: tran; -fx-border-color: white;" text="Log out" textFill="#f6f1f1">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
                            </font>
                         </Button>
                      </children>
@@ -44,8 +56,14 @@
                      <children>
                         <AnchorPane fx:id="Homeform" prefHeight="200.0" prefWidth="200.0" visible="false">
                            <children>
-                              <AnchorPane prefHeight="538.0" prefWidth="547.0" style="-fx-background-color: #26a0da#26a0da;" visible="false" />
-                              <Text layoutX="146.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" />
+                              <AnchorPane prefHeight="538.0" prefWidth="547.0" style="-fx-background-color: #26a0da#26a0da;">
+                                 <children>
+                                    <Text layoutX="93.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the SMUCT Library Management System" textAlignment="CENTER" wrappingWidth="403.4459228515625">
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children></AnchorPane>
                            </children>
                         </AnchorPane>
                         <AnchorPane fx:id="AvailableBookform" prefHeight="200.0" prefWidth="200.0">
@@ -66,7 +84,7 @@
                               <TextField fx:id="title" layoutX="174.0" layoutY="17.0" promptText="Title" />
                               <TextField fx:id="author" layoutX="330.0" layoutY="17.0" promptText="Author" />
                               <Button fx:id="Delete" layoutX="102.0" layoutY="114.0" mnemonicParsing="false" onAction="#Deletebtn" prefHeight="50.0" prefWidth="71.0" text="Delete" />
-                              <Button fx:id="Update1" layoutX="379.0" layoutY="111.0" mnemonicParsing="false" onAction="#Updatebtn" prefHeight="55.0" prefWidth="84.0" text="Save" />
+                              <Button fx:id="Save" layoutX="379.0" layoutY="111.0" mnemonicParsing="false" onAction="#Savebtn" prefHeight="55.0" prefWidth="84.0" text="Save" />
                               <Separator layoutX="240.0" layoutY="97.0" orientation="VERTICAL" prefHeight="66.0" prefWidth="0.0" />
                            </children>
                         </AnchorPane>

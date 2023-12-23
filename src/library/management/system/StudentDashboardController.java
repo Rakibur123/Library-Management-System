@@ -19,6 +19,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
+import javafx.scene.Node;
+import javafx.stage.Stage;
 import library.management.system.Book;
 
 public class StudentDashboardController implements Initializable {
@@ -60,9 +62,11 @@ public class StudentDashboardController implements Initializable {
     @FXML
     private TextField author;
     @FXML
-    private Button Update1;
-    @FXML
     private Button Delete;
+    @FXML
+    private Button Logout;
+    @FXML
+    private Button Save;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -121,17 +125,15 @@ public class StudentDashboardController implements Initializable {
     private void handleHomeButtonClick(ActionEvent event) {
         Homeform.setVisible(true);
         AvailableBookform.setVisible(false);
-       
+
     }
 
     @FXML
     private void handleAvailableBookButtonClick(ActionEvent event) {
         Homeform.setVisible(false);
         AvailableBookform.setVisible(true);
-       
+
     }
-
-
 
     @FXML
     private void addbtn(ActionEvent event) {
@@ -202,6 +204,7 @@ public class StudentDashboardController implements Initializable {
         }
     }
 
+    @FXML
     private void Savebtn(ActionEvent event) {
         try {
             // Get the values from the text fields
@@ -272,6 +275,10 @@ public class StudentDashboardController implements Initializable {
     }
 
     @FXML
-    private void Updatebtn(ActionEvent event) {
+    private void Logoutbtn(ActionEvent event) {
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close(); // Close the current window
+
     }
 }
